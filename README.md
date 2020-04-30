@@ -179,3 +179,21 @@ Steps by using software:
 	* com.hiring.exercise.software.cyan.MultiRSSAnalyzer.controller.MainController
 
 6) Thanks for the oportunity to join in his hiring process. I love programming. I have enjoyed writing this software.
+
+References:
+
+	https://www.vogella.com/tutorials/RSSFeed/article.html
+	https://www.baeldung.com/spring-boot-h2-database
+	https://www.vogella.com/tutorials/ApacheMaven/article.html
+	https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/spring-boot-tutorial/
+	https://www.oscarblancarteblog.com/2018/07/17/spring-boot-relacion-los-microservicios/
+	http://www.profesor-p.com/2018/08/28/ejemplo-aplicacion-mvc-con-spring-boot-usando-netbeans-9/
+	https://www.edureka.co/blog/spring-boot-setup-helloworld-microservices-example/
+	https://github.com/search?q=feed+reader+spring
+	https://www.tutorialspoint.com/spring_boot/spring_boot_building_restful_web_services.htm
+	https://algorithmia.com/algorithms/tags/ScrapeRSS
+	https://demos.algorithmia.com/rss-dashboard
+	https://www.geeksforgeeks.org/parse-json-java/
+	https://toolslick.com/conversion/data/html-to-json
+	https://www.freeformatter.com/xpath-tester.html#ad-output
+	https://howtodoinjava.com/xml/java-xpath-tutorial-example/

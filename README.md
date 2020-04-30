@@ -9,9 +9,9 @@ Steps by using software:
 	Please check how to install maven in Linux or Unix using this URL: https://maven.apache.org/install.html
 
 	After the last steps Run results really easy, you just run the program into the github repository and run the next command with Maven:	
-	
-	# mvn spring-boot:run
-	
+	```
+	mvn spring-boot:run
+	```
 	Once this compile and runs, please you can do the next step
 
 2) Execute the analysis of various RSS Feed
@@ -22,10 +22,12 @@ Steps by using software:
 
 	Please Send via POST the RSS URL list.
 	
-	POST URL: http://localhost:8080/analyse/new
-	
+	POST URL: 
+	```
+	http://localhost:8080/analyse/new
+	```
 	POST MESAGE Example:
-
+	```
 	[
 		"http://feeds.bbci.co.uk/news/world/rss.xml",
 		"http://www.cbn.com/cbnnews/world/feed/",
@@ -37,17 +39,17 @@ Steps by using software:
 		"http://feeds.bbci.co.uk/news/technology/rss.xml",
 		"http://feeds.bbci.co.uk/news/business/rss.xml"
 	]
-	
+	```
 	You can use Postman Software or CURL command (Linux) to send the POST Message.
 
 	You must be sure the links receives at least two entries. The response is an ID by each requirement
 
 	JSon Response Example:
-
+	```
 	[
 		"f0137acc-4a38-45eb-b4b5-a35a1594f810"
 	]
-	
+	```
 	each requirement is saved and its analysis is available to use in the follow step.
 	
 3) Query of news tendencies ordered by Tags Top 3
@@ -59,15 +61,16 @@ Steps by using software:
 	It works using the generated id and sent it via GET
 	
 	Get Example:
-	
+	```
 	http://localhost:8080/frequency/f0137acc-4a38-45eb-b4b5-a35a1594f810
+	```
 	
 	You can use whatever browser (Chrome, Mozilla, Internet Explorer, Microsoft Edge) or Postman Software or CURL command (Linux) to send the GET Message.
 	
 	Json Response list the top three tags around all the feed analysed, its frequency and all the news related to:
 	
 	JSon Response Example
-	
+	```
 	[
 		{
 			"frequency": 104,
@@ -136,7 +139,7 @@ Steps by using software:
 			"idTag": "3e3ba18e-b10e-4a25-ad72-4b55b2d90d63"
 		}
 	]
-
+	```
 4. Access to Embebbed DB
 
 	You can use the persistence connecting with internal Spring-boot H2 tool
@@ -144,11 +147,11 @@ Steps by using software:
 	How to connect to DB:
 	
 	Via Browser you can go to this URL:
-	
+	```
 	http://localhost:8080/h2-console/
-	
+	```
 	Using this connection parameters:
-	
+	```
 	* Driver Class: org.h2.Driver
 	
 	* JDBC URL: jdbc:h2:mem:testdb
@@ -156,28 +159,28 @@ Steps by using software:
 	* User: sa
 	
 	* Password:
-	
+	```
 	And click on Connect.
 	
 	After that you can see all the tables and Run an SQL Statement.
 	
 	Example of SQL to list of news by a top trending in an specific id request:
-	
+	```
 	SELECT T.TITLE, T.URL NEWS T
 	INNER JOIN REQUEST T1 ON T.REQ_ID=T1.REQ_ID
 	INNER JOIN TAGS T2 ON T.NEWS_ID=T2.NEWS_ID
 	WHERE T2.TAG='coronavirus' and t1.REQ_ID='f0137acc-4a38-45eb-b4b5-a35a1594f810'
-	
+	```
 5) That's it. Please read the Source. 
 
 	Main Java Source is located in:
-
+	```
 	* com.hiring.exercise.software.cyan.MultiRSSAnalyzer.MultiRssAnalyzerApplication
-	
+	```
 	Controller Java Source is located in
-	
+	```
 	* com.hiring.exercise.software.cyan.MultiRSSAnalyzer.controller.MainController
-
+	```
 6) Thanks for the oportunity to join in his hiring process. I love programming. I have enjoyed writing this software.
 
 References:

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hiring.exercise.software.cyan.MultiRSSAnalyzer.MultiRssAnalyzerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.043 s - in com.hiring.exercise.software.cyan.MultiRSSAnalyzer.MultiRssAnalyzerApplicationTests

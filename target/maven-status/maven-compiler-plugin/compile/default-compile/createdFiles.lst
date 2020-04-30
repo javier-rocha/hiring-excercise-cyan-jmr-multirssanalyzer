@@ -1,0 +1,6 @@
+com\hiring\exercise\software\cyan\MultiRSSAnalyzer\model\Tag.class
+com\hiring\exercise\software\cyan\MultiRSSAnalyzer\read\MultiRSSAnalyzer.class
+com\hiring\exercise\software\cyan\MultiRSSAnalyzer\ServletInitializer.class
+com\hiring\exercise\software\cyan\MultiRSSAnalyzer\controller\MainController.class
+com\hiring\exercise\software\cyan\MultiRSSAnalyzer\MultiRssAnalyzerApplication.class
+com\hiring\exercise\software\cyan\MultiRSSAnalyzer\model\News.class

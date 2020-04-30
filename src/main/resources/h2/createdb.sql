@@ -1,0 +1,23 @@
+CREATE TABLE REQUEST (
+    REQ_ID      VARCHAR(40)     PRIMARY KEY
+);
+
+CREATE TABLE NEWS (
+    NEWS_ID     VARCHAR(40)      PRIMARY KEY,
+    TITLE       VARCHAR(2000)   NOT NULL,
+    URL         VARCHAR(2000)   NOT NULL,
+    REQ_ID      VARCHAR(40)      NOT NULL
+);
+
+CREATE TABLE TAGS (
+    TAG_ID      VARCHAR(40)     PRIMARY KEY,
+    TAG         VARCHAR(30)     NOT NULL,
+    NEWS_ID     VARCHAR(40)      NOT NULL
+);
+
+CREATE TABLE TOP_TAGS (
+    TAG_ID      VARCHAR(40)     PRIMARY KEY,
+    TAG         VARCHAR(30)     NOT NULL,
+    FREQ        INT             NOT NULL,
+    REQ_ID      VARCHAR(40)      NOT NULL
+);

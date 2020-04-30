@@ -137,4 +137,45 @@ Steps by using software:
 		}
 	]
 
+4. Access to Embebbed DB
+
+	You can use the persistence connecting with internal Spring-boot H2 tool
+	
+	How to connect to DB:
+	
+	Via Browser you can go to this URL:
+	
+	http://localhost:8080/h2-console/
+	
+	Using this connection parameters:
+	
+	* Driver Class: org.h2.Driver
+	
+	* JDBC URL: jdbc:h2:mem:testdb
+	
+	* User: sa
+	
+	* Password:
+	
+	And click on Connect.
+	
+	After that you can see all the tables and Run an SQL Statement.
+	
+	Example of SQL to list of news by a top trending in an specific id request:
+	
+	SELECT T.TITLE, T.URL NEWS T
+	INNER JOIN REQUEST T1 ON T.REQ_ID=T1.REQ_ID
+	INNER JOIN TAGS T2 ON T.NEWS_ID=T2.NEWS_ID
+	WHERE T2.TAG='coronavirus' and t1.REQ_ID='f0137acc-4a38-45eb-b4b5-a35a1594f810'
+	
+5) That's it. Please read the Source. 
+
+	Main Java Source is located in:
+
+	com.hiring.exercise.software.cyan.MultiRSSAnalyzer.MultiRssAnalyzerApplication
+	
+	Controller Java Source is located in
+	
+	com.hiring.exercise.software.cyan.MultiRSSAnalyzer.controller.MainController
+
 

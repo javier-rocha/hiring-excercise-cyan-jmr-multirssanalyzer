@@ -172,10 +172,10 @@ Steps by using software:
 
 	Main Java Source is located in:
 
-	com.hiring.exercise.software.cyan.MultiRSSAnalyzer.MultiRssAnalyzerApplication
+	* com.hiring.exercise.software.cyan.MultiRSSAnalyzer.MultiRssAnalyzerApplication
 	
 	Controller Java Source is located in
 	
-	com.hiring.exercise.software.cyan.MultiRSSAnalyzer.controller.MainController
+	* com.hiring.exercise.software.cyan.MultiRSSAnalyzer.controller.MainController
 
-
+6) Thanks for the oportunity to join in his hiring process. I love programming. I have enjoyed writing this software.

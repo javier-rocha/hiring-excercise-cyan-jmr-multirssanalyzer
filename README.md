@@ -5,6 +5,7 @@ Steps by using software:
 1) Run the software:
 
 	Please check how to install maven in Windows using this URL: https://howtodoinjava.com/maven/how-to-install-maven-on-windows/
+	
 	Please check how to install maven in Linux or Unix using this URL: https://maven.apache.org/install.html
 
 	After the last steps Run results really easy, you just run the program into the github repository and run the next command with Maven:	
@@ -66,6 +67,7 @@ Steps by using software:
 	Json Response list the top three tags around all the feed analysed, its frequency and all the news related to:
 	
 	JSon Response Example
+	
 	[
 		{
 			"frequency": 104,
